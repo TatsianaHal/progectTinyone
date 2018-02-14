@@ -117,23 +117,18 @@
     }
   }
 
-  &__name {
-    width: calc(100% - 30px);
-    margin: 0 auto;
-
-    text-align: center;
-  }
-
   &__title {
     margin-bottom: 5px;
 
     font-weight: $font-weigth-bolder;
     font-size: $font-size-lg;
+    text-align: center;
   }
 
   &__text {
     font-size: $font-size-sm;
     color: $color-gray;
+    text-align: center;
   }
 
   @media ( min-width: $md) {
