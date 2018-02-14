@@ -1,15 +1,29 @@
 .contact {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 
   .title {
-    @include title;
     margin-bottom: 40px;
+
+    @media ( min-width: $md) {
+        margin-bottom: 50px;
+    }
   }
 
   &__row_flex {
     justify-content: space-around;
     width: 100%;
     margin-bottom: 40px;
+
+    @media ( min-width: $md) {
+      justify-content: space-between;
+      width: 76%;
+      margin: 0 auto 40px;
+    }
+  }
+
+  @media ( min-width: $md) {
+      margin-bottom: 70px;
+      padding-top: 111px;
   }
 }
 
@@ -24,18 +38,27 @@
   }
 
   &__icon {
+    display: block;
     padding-bottom: 18px;
 
     font-size: $font-size-lg;
   }
 
   &__name {
+    display: block;
+
     font-size: $font-size-xl;
   }
 
   &__text {
+    display: block;
+
     font-size: $font-size-xs;
     color: $color-gray;
+  }
+
+  @media ( min-width: $md) {
+      width: 33%;
   }
 }
 
@@ -55,6 +78,10 @@
     font-size: $font-size-sm;
 
     border:2px solid #030303;
+
+    @media ( min-width: $md) {
+          width: 480px;
+    }
   }
 
   &__name {
@@ -67,6 +94,10 @@
     font-size: $font-size-sm;
 
     border:2px solid #030303;
+
+    @media ( min-width: $md) {
+          width: 480px;
+    }
   }
 
   &__message {
@@ -80,6 +111,10 @@
     font-size: $font-size-sm;
 
     border:2px solid #030303;
+
+    @media ( min-width: $md) {
+          width: 480px;
+    }
   }
 
   &__btn {
@@ -90,53 +125,12 @@
     color: white;
 
     background-color: #030303;
-  }
-}
 
-
-
-
-
-
-
-
-
-@media ( min-width: 960px) {
-  .contact {
-    margin-bottom: 70px;
-
-    .title {
-      margin-bottom: 50px;
-    }
-
-    &__row_flex {
-      justify-content: space-between;
-      width: 76%;
-      margin: 0 auto 40px;
+    @media ( min-width: $md) {
     }
   }
 
-  .contact-item {
-    width: 33%;
-  }
-
-  .contact-form {
-    width: 480px;
-
-    &__email {
+  @media ( min-width: $md) {
       width: 480px;
-    }
-
-    &__name {
-      width: 480px;
-    }
-
-    &__message {
-      width: 480px;
-    }
-
-    &__btn {
-    }
   }
-
 }

@@ -1,8 +1,9 @@
 .price {
+  padding-top: 50px;
 
-  .title {
-    @include title;
-    margin-bottom: 40px;
+  @media ( min-width: $md) {
+      margin-bottom: 77px;
+      padding-top: 111px;
   }
 }
 
@@ -19,14 +20,46 @@
 
   &__pic {
     display: none;
+
+    @media ( min-width: $md) {
+          display: block;
+          width: 100px;
+          height: 100px;
+          margin-bottom: 20px;
+
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+  }
+
+  &__pic_basic {
+    @media ( min-width: $md) {
+          background-image: url(../img/iphone-circle.png);
+        }
+  }
+
+  &__pic_standart {
+    @media ( min-width: $md) {
+          background-image: url(../img/laptop-circle.png);
+        }
+  }
+
+  &__pic_enterprice {
+    @media ( min-width: $md) {
+          background-image: url(../img/desktop-circle.png);
+        }
   }
 
   &__name {
     display: block;
     margin-bottom: 5px;
 
-    font-family: $font-family-text-bolder;
+    font-weight: $font-weigth-bolder;
     font-size: $font-size-xl;
+
+    @media ( min-width: $md) {
+          margin-bottom: 18px;
+        }
   }
 
   &__text {
@@ -37,13 +70,16 @@
     line-height: 20px;
     text-align: center;
     color: $color-gray;
+
+    @media ( min-width: $md) {
+          width: 60%;
+        }
   }
 
   &__cost {
-    display: block;
     margin-bottom: 5px;
 
-    font-family: $font-family-text-bolder;
+    font-weight: $font-weigth-bolder;
     font-size: $font-size-xxl;
 
     border-bottom: 2px solid #000;
@@ -54,6 +90,10 @@
     margin-bottom: 10px;
 
     color: $color-gray;
+
+    @media ( min-width: $md) {
+          margin-bottom: 35px;
+        }
   }
 
   &__btn {
@@ -61,68 +101,16 @@
     height: 50px;
 
     font-size: $font-size-sm;
-  }
-}
 
+    @media ( min-width: $md) {
+          width: 140px;
+          height: 50px;
 
-
-
-
-
-
-
-
-@media ( min-width: 960px) {
-  .price {
-    margin-bottom: 77px;
-
-    .title {
-      margin-bottom: 80px;
-    }
+          font-size: $font-size-sm;
+        }
   }
 
-  .price-item {
-    width: 33%;
-
-    &__pic {
-      display: block;
-      width: 100px;
-      height: 100px;
-      margin-bottom: 20px;
-
-      background-size: contain;
-      background-repeat: no-repeat;
+  @media ( min-width: $md) {
+      width: 33%;
     }
-
-    &__pic_basic {
-      background-image: url(../img/iphone-circle.png);
-    }
-
-    &__pic_standart {
-      background-image: url(../img/laptop-circle.png);
-    }
-
-    &__pic_enterprice {
-      background-image: url(../img/desktop-circle.png);
-    }
-
-    &__name {
-      margin-bottom: 18px;
-    }
-
-    &__text {
-      width: 60%;
-    }
-
-    &__length {
-      margin-bottom: 35px;
-    }
-
-    &__btn {
-      width: 140px;
-      height: 50px;
-
-      font-size: $font-size-sm;
-    }
-  }
 }

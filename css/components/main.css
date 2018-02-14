@@ -1,0 +1,351 @@
+@font-face {
+  font-family: Fontello;
+  src: url(../fonts/fontello-3e56b12f/font/fontello.woff);
+  src: url(../fonts/fontello-3e56b12f/font/fontello.woff2); }
+
+@font-face {
+  font-family: Source_Sans_Pro_normal;
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: Source_Sans_Pro_bolder;
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: Source_Sans_Pro_bold;
+  src: url(../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf);
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: "Source_Sans_Pro_normal", "Arial", sans-serif; }
+
+.icon {
+  font-family: "Fontello"; }
+
+.container {
+  width: 960px;
+  margin: 0 auto; }
+
+.row-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  margin-left: 10px; }
+
+.main {
+  height: 858px;
+  background-color: #f3da33; }
+  .main__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    height: 98px;
+    padding-left: 30px; }
+  .main__nav {
+    display: block;
+    margin-right: 357px;
+    font-size: 22px; }
+  .main__logo {
+    display: block; }
+  .main__logo_wrapper {
+    margin-right: 255px;
+    margin-bottom: -8px; }
+  .main__socials .icon {
+    padding-left: 8px;
+    font-size: 22px; }
+
+.main-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 760px;
+  padding-top: 254px; }
+  .main-body .info {
+    width: 60%; }
+  .main-body__title {
+    margin: 0;
+    padding-left: 20px;
+    font-family: "Source_Sans_Pro_bold", "Arial", sans-serif;
+    font-size: 48px;
+    text-align: center; }
+  .main-body__text {
+    display: block;
+    margin-bottom: 40px;
+    padding-right: 7%;
+    padding-left: 9%;
+    font-size: 20px;
+    text-align: center; }
+  .main-body__btn {
+    display: block;
+    font-family: "Source_Sans_Pro_bolder", "Arial", sans-serif;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 1px;
+    cursor: pointer;
+    width: 253px;
+    height: 40px;
+    margin: 0 auto;
+    padding-top: 13px;
+    font-size: 22px; }
+
+.features .title {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 111px;
+  padding-left: 10px;
+  text-align: center; }
+  .features .title .title__name {
+    margin: 0;
+    padding-bottom: 12px;
+    font-family: "Source_Sans_Pro_bolder", "Arial", sans-serif;
+    font-size: 32px; }
+  .features .title .title__text {
+    margin: 0;
+    font-size: 20px;
+    color: #888888; }
+
+.features__row-flex {
+  padding-top: 86px;
+  padding-bottom: 40px; }
+
+.features__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33%;
+  margin-bottom: 85px; }
+
+.features__icon {
+  width: 130px;
+  height: 60px;
+  margin-left: 20px;
+  background-image: url(../img/iphone.png);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.features__info {
+  padding-top: 5px;
+  padding-left: 32px; }
+
+.features__name {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Source_Sans_Pro_bolder", "Arial", sans-serif;
+  font-size: 22px; }
+
+.features__text {
+  display: block;
+  font-size: 16px;
+  color: #888888; }
+
+.price .title {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 111px;
+  padding-left: 10px;
+  text-align: center; }
+  .price .title .title__name {
+    margin: 0;
+    padding-bottom: 12px;
+    font-family: "Source_Sans_Pro_bolder", "Arial", sans-serif;
+    font-size: 32px; }
+  .price .title .title__text {
+    margin: 0;
+    font-size: 20px;
+    color: #888888; }
+
+.price__row-flex {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 77px; }
+
+.price-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 28%; }
+  .price-item__pic {
+    width: 103px;
+    height: 103px;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .price-item__pic_basic {
+    background-image: url(../img/iphone-circle.png); }
+  .price-item__pic_standart {
+    background-image: url(../img/laptop-circle.png); }
+  .price-item__pic_enterprice {
+    background-image: url(../img/desktop-circle.png); }
+  .price-item__name {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    font-family: "Source_Sans_Pro_bolder", "Arial", sans-serif;
+    font-size: 24px; }
+  .price-item__text {
+    display: block;
+    margin-bottom: 38px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #888888; }
+  .price-item__cost {
+    display: block;
+    margin: 0;
+    padding-bottom: 6px;
+    font-family: "Source_Sans_Pro_bolder", "Arial", sans-serif;
+    font-size: 32px;
+    border-bottom: 2px solid #000; }
+  .price-item__length {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 37px;
+    color: #888888; }
+  .price-item__btn {
+    display: block;
+    font-family: "Source_Sans_Pro_bolder", "Arial", sans-serif;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 1px;
+    cursor: pointer;
+    width: 140px;
+    height: 30px;
+    padding-top: 13px;
+    font-size: 16px; }
+
+.portfolio .title {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 111px;
+  padding-left: 10px;
+  text-align: center; }
+  .portfolio .title .title__name {
+    margin: 0;
+    padding-bottom: 12px;
+    font-family: "Source_Sans_Pro_bolder", "Arial", sans-serif;
+    font-size: 32px; }
+  .portfolio .title .title__text {
+    margin: 0;
+    font-size: 20px;
+    color: #888888; }
+
+.portfolio__row-flex {
+  padding-top: 72px;
+  padding-bottom: 90px; }
+
+.portfolio__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding-bottom: 60px; }
+
+.portfolio__item {
+  width: 24%; }
+
+.portfolio__link {
+  display: block;
+  height: 226px;
+  cursor: pointer; }
+
+.portfolio__link:hover {
+  background-color: black; }
+  .portfolio__link:hover .portfolio__plus {
+    display: block; }
+  .portfolio__link:hover .portfolio__pict {
+    display: none; }
+
+.portfolio__plus {
+  display: none;
+  width: 100%;
+  height: 226px;
+  margin-bottom: -135px;
+  padding-top: 85px;
+  text-align: center; }
+
+.portfolio__icon-plus {
+  display: block;
+  margin: 0 auto;
+  font-size: 48px;
+  color: white; }
+
+.portfolio__pict {
+  width: 100%;
+  height: 226px;
+  margin-bottom: -50px; }
+
+.portfolio__social-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: white; }
+
+.portfolio__views {
+  display: block;
+  padding-left: 15px; }
+
+.portfolio__date {
+  display: block;
+  padding-right: 15px; }
+
+.portfolio__name {
+  padding-top: 15px;
+  text-align: center; }
+
+.portfolio__title {
+  display: block;
+  font-family: "Source_Sans_Pro_bolder", "Arial", sans-serif;
+  font-size: 22px; }
+
+.portfolio__text {
+  display: block;
+  font-size: 16px;
+  color: #888888; }
+
+.team .title {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 111px;
+  padding-left: 10px;
+  text-align: center; }
+  .team .title .title__name {
+    margin: 0;
+    padding-bottom: 12px;
+    font-family: "Source_Sans_Pro_bolder", "Arial", sans-serif;
+    font-size: 32px; }
+  .team .title .title__text {
+    margin: 0;
+    font-size: 20px;
+    color: #888888; }

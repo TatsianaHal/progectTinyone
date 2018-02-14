@@ -1,14 +1,15 @@
 .portfolio {
-
-  .title {
-    @include title;
-    margin-bottom: 40px;
-  }
+  padding-top: 50px;
 
   &__list {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media ( min-width: $md) {
+        flex-wrap: nowrap;
+        margin-bottom: 60px;
+      }
   }
 
   &__item {
@@ -18,6 +19,11 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    @media ( min-width: $md) {
+        width: calc( 25% - 30px);
+        margin: 0 15px 15px;
+      }
   }
 
   &__link {
@@ -105,14 +111,10 @@
     width: calc( 100% - 15px);
 
     color: #ffffff;
-  }
 
-  &__views {
-    display: block;
-  }
-
-  &__date {
-    display: block;
+    @media ( min-width: $md) {
+        width: 190px;
+    }
   }
 
   &__name {
@@ -125,7 +127,7 @@
   &__title {
     margin-bottom: 5px;
 
-    font-family: $font-family-text-bolder;
+    font-weight: $font-weigth-bolder;
     font-size: $font-size-lg;
   }
 
@@ -133,36 +135,9 @@
     font-size: $font-size-sm;
     color: $color-gray;
   }
-}
 
-
-
-
-
-
-
-
-
-@media ( min-width: 960px) {
-.portfolio {
-  margin-bottom: 94px;
-
-  .title {
-    margin-bottom: 72px;
-  }
-
-  &__list {
-    flex-wrap: nowrap;
-    margin-bottom: 60px;
-  }
-
-  &__item {
-    width: calc( 25% - 30px);
-    margin: 0 15px 15px;
-  }
-
-  &__social-info {
-    width: 190px;
-  }
-}
+  @media ( min-width: $md) {
+    margin-bottom: 94px;
+    padding-top: 111px;
+    }
 }

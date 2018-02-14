@@ -1,9 +1,7 @@
 .team {
+  padding-top: 50px;
 
-  .title {
-    @include title;
     margin-bottom: 40px;
-  }
 
   &__item {
     width: calc( 100% - 30px );
@@ -14,11 +12,20 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    @media ( min-width: $md) {
+          width: calc( 25% - 30px );
+          margin: 0 15px;
+        }
   }
 
   &__avatar {
     display: block;
     margin: 0 auto 10px;
+
+    @media ( min-width: $md) {
+          margin: 0 auto 37px;
+        }
   }
 
   &__author {
@@ -39,31 +46,14 @@
     font-size: $font-size-xs;
 
   }
-}
 
-
-
-
-
-
-
-
-
-@media ( min-width: 960px) {
-  .team {
-    margin-bottom: 68px;
-
-    .title {
-      margin-bottom: 80px;
-    }
-
-    &__item {
-      width: calc( 25% - 30px );
-      margin: 0 15px;
-    }
-
-    &__avatar {
-      margin: 0 auto 37px;
-    }
+  &__socials {
+    display: flex;
+    justify-content: center;
   }
+
+  @media ( min-width: $md) {
+      margin-bottom: 68px;
+      padding-top: 111px;
+      }
 }
