@@ -1,0 +1,149 @@
+.portfolio {
+  padding-top: 50px;
+
+  &__text {
+    margin-bottom: 55px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @media ( min-width: $md) {
+        flex-wrap: nowrap;
+        margin-bottom: 70px;
+      }
+  }
+
+  &__list:last-child {
+    margin-bottom: 0;
+  }
+
+  &__item {
+    width: calc( 100% - 30px);
+    margin: 0 15px 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media ( min-width: $md) {
+        width: calc( 25% - 30px);
+        margin: 0 15px;
+      }
+  }
+
+  &__pic {
+    position: relative;
+    z-index: 5;
+
+    max-width: 220px;
+    height: 220px;
+    margin: 0 auto 20px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    cursor: pointer;
+  }
+
+  &__pic_one {
+    background-image: url(../img/portfolio-6.png);
+  }
+
+  &__pic_two {
+    background-image: url(../img/portfolio-2.png);
+  }
+
+  &__pic_three {
+    background-image: url(../img/portfolio-3.png);
+  }
+
+  &__pic_four {
+    background-image: url(../img/portfolio-4.png);
+  }
+
+  &__pic_five {
+    background-image: url(../img/portfolio-5.png);
+  }
+
+  &__pic_six {
+    background-image: url(../img/portfolio-6.png);
+  }
+
+  &__pic_seven {
+    background-image: url(../img/portfolio-7.png);
+  }
+
+  &__pic_eight {
+    background-image: url(../img/portfolio-8.png);
+  }
+
+  &__pic:hover {
+
+    .portfolio__link {
+      position: absolute;
+      z-index: 10;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #030303;
+    }
+
+    .portfolio__link_icon {
+      display: block;
+    }
+  }
+
+  &__link {
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    font-size: $font-size-main-header;
+    color: white;
+  }
+
+  &__social-info {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    z-index: 15;
+
+    display: flex;
+    justify-content: space-between;
+    width: calc( 100% - 15px);
+
+    color: #ffffff;
+
+    @media ( min-width: $md) {
+        width: 190px;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 5px;
+
+    font-weight: $font-weigth-bolder;
+    font-size: $font-size-lg;
+    text-align: center;
+  }
+
+  &__info {
+    display: block;
+
+    font-size: $font-size-sm;
+    color: $color-gray;
+    text-align: center;
+  }
+
+  @media ( min-width: $md) {
+    margin-bottom: 145px;
+    padding-top: 111px;
+    }
+}

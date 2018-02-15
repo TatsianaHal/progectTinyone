@@ -1,0 +1,108 @@
+.stats {
+  margin-bottom: 60px;
+
+  &__row_flex {
+    width: 100%;
+    margin:0 auto 20px;
+
+    @media ( min-width: $md) {
+          margin-bottom:78px;
+        }
+  }
+
+  @media ( min-width: $md) {
+      margin-bottom: 100px;
+      }
+}
+
+.stats-item {
+  width: calc( 50% - 30px);
+  text-align: center;
+
+  &__icon {
+    display: block;
+    margin-bottom: 6px;
+
+    font-size: $font-size-main-header;
+  }
+
+  &__numb {
+    display: block;
+
+    font-weight: $font-weigth-bolder;
+    font-size: $font-size-xl;
+  }
+
+  &__text {
+    display: block;
+
+    font-size: $font-size-xs;
+    color: $color-gray;
+  }
+
+  @media ( min-width: $md) {
+      width: 25%;
+      margin: 0;
+    }
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__avatar {
+    display: block;
+    width: 105px;
+    height: 105px;
+    margin:0 auto 15px;
+  }
+
+  &__author {
+    margin-bottom: 5px;
+
+    font-weight: $font-weigth-bolder;
+    font-size: $font-size-lg;
+  }
+
+  &__position {
+    margin-bottom:32px;
+
+    font-size: $font-size-sm;
+    color: $color-gray;
+  }
+
+  &__text {
+    position: relative;
+
+    width: 90%;
+    padding-left: 140px;
+    padding-right: 50px;
+
+    font-size: $font-size-md;
+    color: $color-gray;
+    text-align: center;
+
+    @media ( min-width: $md) {
+          width: 75%;
+        }
+  }
+
+  &__text:before {
+    position: absolute;
+    left: 65px;
+
+    content: "\2018\2018";
+
+    font-size: 40px;
+  }
+
+  &__text:after {
+    position: absolute;
+    right: 5px;
+
+
+    content: "\2019\2019";
+    font-size: 40px;
+  }
+}
