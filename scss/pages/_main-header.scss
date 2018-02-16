@@ -1,0 +1,118 @@
+.main {
+  height:100vh;
+
+  background-color: #f3da33;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+
+    @media ( min-width: $md) {
+        align-items: flex-end;
+        height: 98px;
+      }
+  }
+
+  &__nav {
+    display: block;
+
+    font-size: $font-size-lg;
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    // width: 160px;
+    // height: 43px;
+
+    @media ( min-width: $md) {
+        margin-bottom: -8px;
+      }
+  }
+
+  &__logo-img {
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+  }
+
+  &__logo-text {
+    display: block;
+
+    font-size: $font-size-xxl;
+    font-weight: $font-weigth-bold;
+  }
+
+  &__socials {
+    display: none;
+
+    @media ( min-width: $md) {
+        display: flex;
+      }
+  }
+
+  &__social {
+    @media ( min-width: $md) {
+        margin-right: 15px;
+
+        font-size: $font-size-lg;
+    }
+  }
+
+  &__social:last-child {
+    @media ( min-width: $md) {
+        margin-right: 0;
+    }
+  }
+
+  @media ( min-width: $md) {
+    height: 858px;
+   }
+}
+
+.main-body {
+  height: calc( 100vh - 100px );
+  padding-top: 250px;
+
+  text-align: center;
+
+  &__title {
+    margin-bottom: 20px;
+
+    
+  }
+
+  &__text {
+    width: 100%;
+    margin-bottom: 20px;
+
+    font-size: $font-size-md;
+
+    @media ( min-width: $md) {
+        display: block;
+        width: 54.5%;
+        margin: 0 auto 45px ;
+    }
+  }
+
+  .btn_big {
+    width: 253px;
+    height: 50px;
+    margin: 0 auto;
+
+    font-size: $font-size-lg;
+  }
+
+  .btn_big:hover {
+    color: #f3da33;
+    background-color: #000000;
+  }
+
+  @media ( min-width: $md) {
+    height: calc( 858px - 98px );
+    }
+}

@@ -1,0 +1,58 @@
+.features {
+  padding-top: 50px;
+
+  &__text {
+    margin-bottom: 80px;
+  }
+
+  &__item {
+    position: relative;
+
+    width: 90%;
+    margin: 0 auto 40px;
+
+    @media ( min-width: $md) {
+        width: calc(33% - 30px);
+        margin: 0 15px 95px;
+      }
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__item:nth-of-type(4) {
+    @media ( min-width: $md) {
+        margin-bottom: 0;
+      }
+  }
+
+  &__item:nth-of-type(5) {
+    @media ( min-width: $md) {
+        margin-bottom: 0;
+      }
+  }
+
+  &__item::before {
+    position: absolute;
+
+    content: url(../img/iphone.png);
+  }
+
+  &__name {
+    padding-left: 60px;
+  }
+
+  &__subscribe {
+    display: block;
+    padding-left: 60px;
+
+    font-size: $font-size-sm;
+    color: $color-gray;
+  }
+
+  @media ( min-width: $md) {
+    margin-bottom: 160px;
+    padding-top: 111px;
+    }
+}

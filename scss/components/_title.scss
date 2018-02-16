@@ -1,0 +1,16 @@
+h2 {
+  margin-bottom: 20px;
+
+  font-weight: $font-weigth-bolder;
+  font-size: $font-size-xxl;
+  text-align: center;
+}
+
+.text_container {
+  width: 95%;
+  margin: 0 auto 40px;
+
+  font-size: $font-size-md;
+  color: $color-gray;
+  text-align: center;
+}

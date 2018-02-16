@@ -1,0 +1,123 @@
+.price {
+  padding-top: 50px;
+
+  &__text {
+    margin-bottom: 70px;
+  }
+
+  @media ( min-width: $md) {
+      margin-bottom: 77px;
+      padding-top: 111px;
+  }
+}
+
+.price-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 60px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__pic {
+    display: none;
+
+    @media ( min-width: $md) {
+          display: block;
+          width: 100px;
+          height: 100px;
+          margin-bottom: 30px;
+
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+  }
+
+  &__pic_basic {
+    @media ( min-width: $md) {
+          background-image: url(../img/iphone-circle.png);
+        }
+  }
+
+  &__pic_standart {
+    @media ( min-width: $md) {
+          background-image: url(../img/laptop-circle.png);
+        }
+  }
+
+  &__pic_enterprice {
+    @media ( min-width: $md) {
+          background-image: url(../img/desktop-circle.png);
+        }
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 5px;
+
+    font-weight: $font-weigth-bolder;
+    font-size: $font-size-xl;
+
+    @media ( min-width: $md) {
+          margin-bottom: 18px;
+        }
+  }
+
+  &__text {
+    display: block;
+    margin-bottom: 30px;
+
+    font-size: $font-size-xs;
+    line-height: 20px;
+    text-align: center;
+    color: $color-gray;
+
+    @media ( min-width: $md) {
+          width: 60%;
+        }
+  }
+
+  &__cost {
+    margin-bottom: 5px;
+
+    font-weight: $font-weigth-bolder;
+    font-size: $font-size-xxl;
+
+    border-bottom: 2px solid #000;
+  }
+
+  &__length {
+    display: block;
+    margin-bottom: 10px;
+
+    color: $color-gray;
+
+    @media ( min-width: $md) {
+          margin-bottom: 35px;
+        }
+  }
+
+  &__btn {
+    font-size: $font-size-sm;
+
+    @media ( min-width: $md) {
+          width: 140px;
+          height: 50px;
+
+          font-size: $font-size-sm;
+        }
+  }
+
+  &__btn:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+  }
+
+  @media ( min-width: $md) {
+      width: 33%;
+      margin-bottom: 5px;
+    }
+}
