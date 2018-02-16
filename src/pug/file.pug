@@ -1,0 +1,396 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Tinyone
+    link(href='src/css/main.css', rel='stylesheet')
+  body
+    header
+      .main
+        .container
+          .main__header
+            a.icon.main__nav(href='#') 
+            a.main__logo-wrapper(href='#')
+              img.main__logo-img(src='src/img/logo-pic.svg', alt='logo')
+              span.main__logo-text tinyone
+            ul.main__socials  
+              each icon in ['', '', '', '']
+                li.main__social
+                  a.icon.main__icon(href='#')= icon
+          .main-body
+            h1.main-body__title Inspire your inspiration
+            p.main-body__text
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+            a.btn.btn_big
+              span.btn-text GET START
+                    
+    section
+      .features
+        .container
+          h2.features__head Tinyone features
+          p.features__text.text.text_container
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+            -
+              var items= [{
+                name: "Fully Responsive",
+                subscribe: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+                }, {
+                name: "Fully Layered PSD",
+                subscribe: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+                }, {
+                name: "Font Awesome Icons",
+                subscribe: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+                }, {
+                name: "HTML & CSS3",
+                subscribe: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+                }, {
+                name: "Email Template",
+                subscribe: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+                }, {
+                name: "Free to download",
+                subscribe: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum."
+                }];
+
+          .row.row_flex
+            each  feature in  items
+                .features__item
+                  span.features__name= feature. name
+                  p.features__subscribe= feature. subscribe
+
+    section
+      .price
+        .container
+          h2.price__head Pricing And Free Trial
+          p.price__text.text.text_container
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+            -
+              var items= [{
+                name: "Basic",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                cost: "FREE",
+                length: "free forever",
+                btn: "GET FREE NOW"
+              }, {
+                name: "Standart",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                cost: "$99",
+                length: "month",
+                btn: "UPGRADE"  
+              }, {
+                name: "Enterprice",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                cost: "$199",
+                length: "month",
+                btn: "LEARN MORE"  
+              }]
+
+          .row.row_flex
+            .price-item
+              .price-item__pic.price-item__pic_basic
+              span.price-item__name Basic
+              p.price-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              span.price-item__cost FREE
+              span.price-item__length free forever
+              a.btn.btn_md.price-item__btn(href='#')
+                span.btn-text GET FREE NOW
+            .price-item
+              .price-item__pic.price-item__pic_standart
+              span.price-item__name Standart
+              p.price-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              span.price-item__cost
+                span.icon.price__icon 
+                | 99
+              span.price-item__length month
+              a.btn.btn_md.price-item__btn(href='#')
+                span.btn-text UPGRADE
+            .price-item
+              .price-item__pic.price-item__pic_enterprice
+              span.price-item__name Enterprice
+              p.price-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              span.price-item__cost
+                span.icon.price__icon 
+                | 199
+              span.price-item__length month
+              a.btn.btn_md.price-item__btn(href='#')
+                span.btn-text LEARN MORE
+    section
+      .portfolio
+        .container
+          h2.portfolio__head Our works
+          p.portfolio__text.text.text_container
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+          .row.row_flex
+            .portfolio__list
+              .portfolio__item
+                .portfolio__pic.portfolio__pic_one
+                  a.portfolio__link(href='#')
+                    span.icon.portfolio__link_icon 
+                  .portfolio__social-info
+                    span.portfolio__views
+                      span.icon.portfolio__icon 
+                      | 279
+                    span.portfolio__date
+                      | 07/03/14 
+                      span.icon.portfolio__icon 
+                span.portfolio__title Fully Responsive
+                span.portfolio__info Design / Branding
+              .portfolio__item
+                .portfolio__pic.portfolio__pic_two
+                  a.portfolio__link(href='#')
+                    span.icon.portfolio__link_icon 
+                  .portfolio__social-info
+                    span.portfolio__views
+                      span.icon.portfolio__icon 
+                      | 279
+                    span.portfolio__date
+                      | 07/03/14 
+                      span.icon.portfolio__icon 
+                span.portfolio__title Font Awesome Icons
+                span.portfolio__info Design / Branding
+              .portfolio__item
+                .portfolio__pic.portfolio__pic_three
+                  a.portfolio__link(href='#')
+                    span.icon.portfolio__link_icon 
+                  .portfolio__social-info
+                    span.portfolio__views
+                      span.icon.portfolio__icon 
+                      | 279
+                    span.portfolio__date
+                      | 07/03/14 
+                      span.icon.portfolio__icon 
+                span.portfolio__title HTML & CSS3
+                span.portfolio__info App design / development
+              .portfolio__item
+                .portfolio__pic.portfolio__pic_four
+                  a.portfolio__link(href='#')
+                    span.icon.portfolio__link_icon 
+                  .portfolio__social-info
+                    span.portfolio__views
+                      span.icon.portfolio__icon 
+                      | 279
+                    span.portfolio__date
+                      | 07/03/14 
+                      span.icon.portfolio__icon 
+                span.portfolio__title Various Layouts
+                span.portfolio__info Branding
+            .portfolio__list
+              .portfolio__item
+                .portfolio__pic.portfolio__pic_five
+                  a.portfolio__link(href='#')
+                    span.icon.portfolio__link_icon 
+                  .portfolio__social-info
+                    span.portfolio__views
+                      span.icon.portfolio__icon 
+                      | 279
+                    span.portfolio__date
+                      | 07/03/14 
+                      span.icon.portfolio__icon 
+                span.portfolio__title Fully Responsive
+                span.portfolio__info Design / Branding
+              .portfolio__item
+                .portfolio__pic.portfolio__pic_six
+                  a.portfolio__link(href='#')
+                    span.icon.portfolio__link_icon 
+                  .portfolio__social-info
+                    span.portfolio__views
+                      span.icon.portfolio__icon 
+                      | 279
+                    span.portfolio__date
+                      | 07/03/14 
+                      span.icon.portfolio__icon 
+                span.portfolio__title Font Awesome Icons
+                span.portfolio__info Design / Branding
+              .portfolio__item
+                .portfolio__pic.portfolio__pic_seven
+                  a.portfolio__link(href='#')
+                    span.icon.portfolio__link_icon 
+                  .portfolio__social-info
+                    span.portfolio__views
+                      span.icon.portfolio__icon 
+                      | 279
+                    span.portfolio__date
+                      | 07/03/14 
+                      span.icon.portfolio__icon 
+                span.portfolio__title HTML & CSS3
+                span.portfolio__info App design / development
+              .portfolio__item
+                .portfolio__pic.portfolio__pic_eight
+                  a.portfolio__link(href='#')
+                    span.icon.portfolio__link_icon 
+                  .portfolio__social-info
+                    span.portfolio__views
+                      span.icon.portfolio__icon 
+                      | 279
+                    span.portfolio__date
+                      | 07/03/14 
+                      span.icon.portfolio__icon 
+                span.portfolio__title Various Layouts
+                span.portfolio__info Branding
+    section
+      .team
+        .container
+          h2.team__head Our team
+          p.team__text.text.text_container
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+          .row.row_flex
+            .team__item
+              img.team__avatar(src='src/img/team-1.png', alt="authors's photo")
+              span.team__author John Doe
+              span.team__position Ul Designer
+              p.team__info Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              ul.team__socials
+                li.team__social
+                  a.team__link.icon.icon_facebook(href='#') 
+                li.team__social
+                  a.team__link.icon.icon_twitter(href='#') 
+                li.team__social
+                  a.team__link.icon.icon_linkedin(href='#') 
+            .team__item
+              img.team__avatar(src='src/img/team-2.png', alt="authors's photo")
+              span.team__author John Doe
+              span.team__position Ul Designer
+              p.team__info Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              ul.team__socials
+                li.team__social
+                  a.team__link.icon.icon_facebook(href='#') 
+                li.team__social
+                  a.team__link.icon.icon_twitter(href='#') 
+                li.team__social
+                  a.team__link.icon.icon_linkedin(href='#') 
+            .team__item
+              img.team__avatar(src='src/img/team-3.png', alt="authors's photo")
+              span.team__author John Doe
+              span.team__position Ul Designer
+              p.team__info Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              ul.team__socials
+                li.team__social
+                  a.team__link.icon.icon_facebook(href='#') 
+                li.team__social
+                  a.team__link.icon.icon_twitter(href='#') 
+                li.team__social
+                  a.team__link.icon.icon_linkedin(href='#') 
+            .team__item
+              img.team__avatar(src='src/img/team-4.png', alt="authors's photo")
+              span.team__author John Doe
+              span.team__position Ul Designer
+              p.team__info Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              ul.team__socials
+                li.team__social
+                  a.team__link.icon.icon_facebook(href='#') 
+                li.team__social
+                  a.team__link.icon.icon_twitter(href='#') 
+                li.team__social
+                  a.team__link.icon.icon_linkedin(href='#') 
+    section
+      .stats
+        .container
+          h2.stats__head Stats & Testimonial
+          p.stats__text.text.text_container
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+            -
+              var stats= [{
+                icon: "",
+                numb: "20",
+                text: "Products"
+                }, {
+                icon: "",
+                numb: "120,000",
+                text: "Downloads"
+                }, {
+                icon: "",
+                numb: "1200",
+                text: "Customers"
+                }, {
+                icon: "",
+                numb: "900",
+                text: "Like"
+                }];
+
+          .row.row_flex.stats__row_flex  
+              each  val in  stats
+                .stats-item
+                span.icon.stats-item__icon= val. icon
+                span.stats-item__numb= val. numb
+                span.stats-item__text= val. text
+              
+          blockquote.review
+            img.review__avatar(src='src/img/team-1.png', alt="authors's photo")
+            span.review__author John Doe
+            span.review__position From Wordpress
+            p.review__text
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+    section
+      .contact
+        .container
+          h2.contact__head Keep in touch with us
+          p.contact__text.text.text_container
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+            -
+              var contact= [{
+                icon: "",
+                info: "Address",
+                text: "66, Dang Van ngu, Dong Da, Ha noi, Vietnam"
+                }, {
+                icon: "",
+                info: "E-mail",
+                text: "contach@halovietnam.com"
+                }, {
+                icon: "",
+                info: "Phone",
+                text: "+844 1234 56789"
+                }];
+
+          .row.row_flex.contact__row_flex  
+              each  val in  contact
+                .contact-item
+                  span.icon.contact-item__icon= val. icon
+                  span.contact-item__name= val. info
+                  sanp.contact-item__text= val. text
+        
+          .row
+            form.contact-form
+              input.contact-form__email(type='email', name='name', placeholder='Email')
+              input.contact-form__name(type='text', name='name', placeholder='Full name')
+              textarea.contact-form__message(placeholder='Message')
+              a.btn.btn_md.contact-form__btn(href='#')
+                span.btn-text SEND MESSAGE
+
+    footer
+      .subscribe
+        .container
+          h2.subscribe__head Sign up for our newsletter
+          p.subscribe__text.text.text_container
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+          form.subscribe-form
+            input.subscribe-form__email(type='email', name='name', placeholder='Enter your email to update')
+            a.btn.btn_md.subscribe-form__btn(href='#')
+              span.btn-text SUBMIT
+          .foother
+            .row.row_flex
+              .foother__col.foother__col_first
+                .foother__item
+                  span.foother__text HALOVETNAM LTD
+                  span.foother__text 66, Dang Van ngu, Dong Da
+                  span.foother__text Hanoi, Vietnam
+                  span.foother__text contact@halovietnam.com
+                  span.foother__text +844 35149182
+                .foother__item
+                  span.foother__text Examples
+                  span.foother__text Shop
+                  span.foother__text License
+              .foother__col
+                .foother__item
+                  span.foother__text Contact
+                  span.foother__text About
+                  span.foother__text Privacy
+                  span.foother__text Terms
+                .foother__item
+                  span.foother__text Download
+                  span.foother__text Support
+                  span.foother__text Documents
+                .foother__item
+                  span.foother__text Media
+                  span.foother__text Blog
+                  span.foother__text Forums
+

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Fontello;
+  src: url(../fonts/fontello-3e56b12f/font/fontello.woff);
+  src: url(../fonts/fontello-3e56b12f/font/fontello.woff2);
+}
+
+@font-face {
+    font-family: 'source_sans';
+    src: url('../fonts/webfont/sourcesans.eot');
+    src: url('../fonts/webfont/sourcesans.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/webfont/sourcesans.woff2') format('woff2'),
+          url('../fonts/webfont/sourcesans.woff') format('woff'),
+          url('../fonts/webfont/sourcesans.ttf')  format('truetype'),
+          url('../fonts/webfont/sourcesans.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

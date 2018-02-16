@@ -8,19 +8,19 @@ const gulp = require('gulp'),
 			autoprefixer = require('gulp-autoprefixer');
 
 			gulp.task('sass', function() {
-          return gulp.src('./scss/**/*.scss') // Берем источник
+          return gulp.src('src/scss/**/*.scss') // Берем источник
           .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
           .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
           .pipe(autoprefixer({
             browsers: ['last 3 versions', "> 2%"],
             cascade: false
           }))
-          .pipe(gulp.dest('./css'))
+          .pipe(gulp.dest('src/css'))
           .pipe(notify('Sass is compile!'));
       });
 
       gulp.task('pug', function() {
-        return gulp.src('./*.pug')
+        return gulp.src('src/pug/*.pug')
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
     		.pipe(pug({pretty: '\t'}))
     		.pipe(gulp.dest("./"))
@@ -28,7 +28,7 @@ const gulp = require('gulp'),
       });
 
 			gulp.task('watch', function(){
-				gulp.watch('./scss/**/*.scss', ['sass']);
+				gulp.watch('src/scss/**/*.scss', ['sass']);
         gulp.watch('./*.pug', ['pug']);
 			});
 
